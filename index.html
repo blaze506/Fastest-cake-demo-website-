@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fastest Cakes | Beautiful Cakes. Delivered Fast.</title>
 
 <meta name="description"
-content="Fastest Cakes — beautiful, affordable cakes delivered fast. Website concept by Blaze Web Studio.">
+content="Fastest Cakes — beautiful, affordable cakes delivered fast.">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#6d3828">
+
+<!-- iPhone / iPad -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Fastest Cakes">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link
+href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+rel="stylesheet">
 
 <style>
 
@@ -66,7 +78,6 @@ textarea{
     --white:#fff;
     --line:#e7d9cc;
 }
-
 
 /* =====================================================
    LOADER
@@ -124,7 +135,6 @@ textarea{
     to{transform:translateX(120px);}
 }
 
-
 /* =====================================================
    HEADER
 ===================================================== */
@@ -148,7 +158,6 @@ header.scrolled{
     width:min(1240px,92%);
     height:84px;
     margin:auto;
-
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -198,7 +207,6 @@ header.scrolled{
     cursor:pointer;
 }
 
-
 /* =====================================================
    HERO
 ===================================================== */
@@ -206,10 +214,8 @@ header.scrolled{
 .hero{
     min-height:100vh;
     position:relative;
-
     display:flex;
     align-items:center;
-
     color:white;
 
     background:
@@ -227,7 +233,6 @@ header.scrolled{
     width:min(1240px,92%);
     margin:auto;
     padding-top:75px;
-
     animation:heroIn 1.2s cubic-bezier(.2,.8,.2,1);
 }
 
@@ -282,22 +287,16 @@ header.scrolled{
     display:inline-flex;
     align-items:center;
     justify-content:center;
-
     min-height:51px;
     padding:0 24px;
-
     border:1px solid transparent;
-
     font-size:10px;
     font-weight:700;
     letter-spacing:1.4px;
     text-transform:uppercase;
-
     cursor:pointer;
-
     position:relative;
     overflow:hidden;
-
     transition:.35s;
 }
 
@@ -308,9 +307,7 @@ header.scrolled{
     left:-120%;
     width:70%;
     height:100%;
-
     background:rgba(255,255,255,.25);
-
     transform:skewX(-20deg);
     transition:.65s;
 }
@@ -344,9 +341,7 @@ header.scrolled{
     bottom:35px;
     left:50%;
     transform:translateX(-50%);
-
     width:min(1240px,92%);
-
     display:flex;
     gap:35px;
     flex-wrap:wrap;
@@ -366,7 +361,6 @@ header.scrolled{
     color:var(--gold2);
     font-size:18px;
 }
-
 
 /* =====================================================
    SECTIONS
@@ -412,9 +406,8 @@ section{
     margin-top:18px;
 }
 
-
 /* =====================================================
-   TRUST STRIP
+   TRUST
 ===================================================== */
 
 .trust{
@@ -451,7 +444,6 @@ section{
     letter-spacing:1px;
 }
 
-
 /* =====================================================
    SHOP
 ===================================================== */
@@ -479,12 +471,10 @@ section{
     border:1px solid var(--line);
     padding:11px 16px;
     cursor:pointer;
-
     font-size:9px;
     font-weight:700;
     letter-spacing:1px;
     text-transform:uppercase;
-
     transition:.3s;
 }
 
@@ -506,9 +496,7 @@ section{
     background:white;
     position:relative;
     overflow:hidden;
-
     border:1px solid #eee3da;
-
     transition:
     transform .55s cubic-bezier(.2,.8,.2,1),
     box-shadow .55s;
@@ -540,12 +528,9 @@ section{
     position:absolute;
     top:14px;
     left:14px;
-
     background:var(--brown);
     color:white;
-
     padding:7px 10px;
-
     font-size:8px;
     font-weight:700;
     letter-spacing:1px;
@@ -557,20 +542,15 @@ section{
     bottom:12px;
     left:12px;
     right:12px;
-
     padding:12px;
-
     background:rgba(255,255,255,.94);
     backdrop-filter:blur(10px);
-
     border:0;
     cursor:pointer;
-
     font-size:9px;
     font-weight:700;
     letter-spacing:1px;
     text-transform:uppercase;
-
     transform:translateY(70px);
     transition:.4s;
 }
@@ -626,9 +606,8 @@ section{
     margin-top:45px;
 }
 
-
 /* =====================================================
-   FEATURE SECTION
+   FEATURE
 ===================================================== */
 
 .feature-section{
@@ -672,11 +651,9 @@ section{
     width:43px;
     height:43px;
     border-radius:50%;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     background:white;
     color:var(--gold);
     flex:none;
@@ -693,7 +670,6 @@ section{
     line-height:1.7;
     margin-top:5px;
 }
-
 
 /* =====================================================
    OCCASIONS
@@ -734,12 +710,10 @@ section{
     z-index:2;
     bottom:22px;
     left:20px;
-
     color:white;
     font-family:"Playfair Display",serif;
     font-size:25px;
 }
-
 
 /* =====================================================
    DELIVERY
@@ -793,14 +767,9 @@ section{
     font-size:11px;
 }
 
-
 /* =====================================================
    GALLERY
 ===================================================== */
-
-.gallery{
-    background:white;
-}
 
 .gallery-grid{
     display:grid;
@@ -834,16 +803,12 @@ section{
     bottom:0;
     left:0;
     right:0;
-
     padding:20px;
-
     color:white;
     background:linear-gradient(transparent,rgba(0,0,0,.7));
-
     font-family:"Playfair Display",serif;
     font-size:22px;
 }
-
 
 /* =====================================================
    REVIEWS
@@ -884,7 +849,6 @@ section{
     font-size:11px;
 }
 
-
 /* =====================================================
    LOCATIONS
 ===================================================== */
@@ -919,17 +883,14 @@ section{
     margin-top:8px;
 }
 
-
 /* =====================================================
    CTA
 ===================================================== */
 
 .cta{
     padding:100px 0;
-
     color:white;
     text-align:center;
-
     background:
     linear-gradient(rgba(35,20,13,.88),rgba(35,20,13,.88)),
     url("https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=2000&q=90")
@@ -949,7 +910,6 @@ section{
     font-size:13px;
 }
 
-
 /* =====================================================
    WHATSAPP
 ===================================================== */
@@ -958,25 +918,17 @@ section{
     position:fixed;
     right:22px;
     bottom:22px;
-
     width:62px;
     height:62px;
-
     border-radius:50%;
-
     background:#25D366;
     color:white;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     z-index:3000;
-
     box-shadow:0 12px 30px rgba(0,0,0,.25);
-
     animation:pulse 2.2s infinite;
-
     transition:.3s;
 }
 
@@ -996,13 +948,13 @@ section{
         0 12px 30px rgba(0,0,0,.25),
         0 0 0 0 rgba(37,211,102,.4);
     }
+
     50%{
         box-shadow:
         0 12px 30px rgba(0,0,0,.25),
         0 0 0 15px rgba(37,211,102,0);
     }
 }
-
 
 /* =====================================================
    FOOTER
@@ -1065,7 +1017,6 @@ footer{
     color:var(--gold2);
 }
 
-
 /* =====================================================
    MODAL
 ===================================================== */
@@ -1074,13 +1025,10 @@ footer{
     position:fixed;
     inset:0;
     z-index:6000;
-
     display:none;
     align-items:center;
     justify-content:center;
-
     padding:20px;
-
     background:rgba(20,10,7,.75);
     backdrop-filter:blur(8px);
 }
@@ -1093,12 +1041,9 @@ footer{
     width:min(850px,100%);
     max-height:90vh;
     overflow:auto;
-
     background:white;
-
     display:grid;
     grid-template-columns:1fr 1fr;
-
     position:relative;
 }
 
@@ -1119,15 +1064,13 @@ footer{
     position:absolute;
     top:15px;
     right:18px;
-
     width:35px;
     height:35px;
-
     border:0;
     background:white;
-
     cursor:pointer;
     font-size:20px;
+    z-index:2;
 }
 
 .modal-category{
@@ -1174,7 +1117,6 @@ footer{
     text-transform:uppercase;
 }
 
-
 /* =====================================================
    REVEAL
 ===================================================== */
@@ -1182,7 +1124,6 @@ footer{
 .reveal{
     opacity:0;
     transform:translateY(35px);
-
     transition:
     opacity .9s ease,
     transform .9s cubic-bezier(.2,.8,.2,1);
@@ -1192,7 +1133,6 @@ footer{
     opacity:1;
     transform:translateY(0);
 }
-
 
 /* =====================================================
    MOBILE
@@ -1219,7 +1159,6 @@ footer{
     .trust-item{
         border-bottom:1px solid rgba(255,255,255,.1);
     }
-
 }
 
 @media(max-width:800px){
@@ -1230,20 +1169,14 @@ footer{
 
     .nav-links{
         display:none;
-
         position:absolute;
         top:84px;
         left:0;
-
         width:100%;
-
         padding:25px;
-
         background:var(--cream);
-
         flex-direction:column;
         align-items:stretch;
-
         box-shadow:0 20px 35px rgba(0,0,0,.08);
     }
 
@@ -1289,7 +1222,6 @@ footer{
     .modal-image{
         min-height:300px;
     }
-
 }
 
 @media(max-width:600px){
@@ -1369,7 +1301,6 @@ footer{
         right:17px;
         bottom:17px;
     }
-
 }
 
 </style>
@@ -1377,25 +1308,18 @@ footer{
 
 <body>
 
-
 <!-- =====================================================
      LOADER
 ===================================================== -->
 
 <div class="loader" id="loader">
-
     <div class="loader-inner">
-
         <div class="loader-logo">
             Fastest <span>Cakes</span>
         </div>
-
         <div class="loader-line"></div>
-
     </div>
-
 </div>
-
 
 <!-- =====================================================
      HEADER
@@ -1409,9 +1333,7 @@ footer{
 Fastest <span>Cakes</span>
 </a>
 
-<div class="menu" id="menu">
-☰
-</div>
+<div class="menu" id="menu">☰</div>
 
 <nav class="nav-links" id="navLinks">
 
@@ -1428,9 +1350,7 @@ Order Now
 </nav>
 
 </div>
-
 </header>
-
 
 <!-- =====================================================
      HERO
@@ -1468,33 +1388,27 @@ Find Your Occasion
 
 </div>
 
-
 <div class="hero-badges">
 
 <div class="badge">
-<strong>01</strong>
-Affordable
+<strong>01</strong> Affordable
 </div>
 
 <div class="badge">
-<strong>02</strong>
-Fast Delivery
+<strong>02</strong> Fast Delivery
 </div>
 
 <div class="badge">
-<strong>03</strong>
-Free Sparklers
+<strong>03</strong> Free Sparklers
 </div>
 
 <div class="badge">
-<strong>04</strong>
-Made For Moments
+<strong>04</strong> Made For Moments
 </div>
 
 </div>
 
 </section>
-
 
 <!-- =====================================================
      TRUST
@@ -1525,9 +1439,7 @@ Made For Moments
 </div>
 
 </div>
-
 </div>
-
 
 <!-- =====================================================
      SHOP
@@ -1550,14 +1462,12 @@ Find Something Worth Celebrating.
 </h2>
 
 <p class="section-text">
-Browse some of Fastest Cakes' publicly listed creations and discover
-a cake for every kind of celebration.
+Browse some of Fastest Cakes' creations and discover a cake
+for every kind of celebration.
 </p>
 
 </div>
-
 </div>
-
 
 <div class="filters">
 
@@ -1583,28 +1493,23 @@ Children
 
 </div>
 
-
 <div class="products" id="products">
-
 
 <!-- PRODUCT 1 -->
 
-<div
-class="product reveal"
+<div class="product reveal"
 data-category="buttercream budget"
 data-name="Legacy Prime Cake"
 data-price="₦15,500"
 data-image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=90"
-data-description="A classic single-layer celebration cake concept inspired by one of Fastest Cakes' publicly listed best sellers."
->
+data-description="A classic celebration cake concept.">
 
 <div class="product-image">
 
 <img
 src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=90"
 alt="Legacy Prime Cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="product-tag">
 Best Seller
@@ -1637,30 +1542,24 @@ Order
 </button>
 
 </div>
-
 </div>
-
 </div>
-
 
 <!-- PRODUCT 2 -->
 
-<div
-class="product reveal"
+<div class="product reveal"
 data-category="buttercream"
 data-name="Flork Love Cake"
 data-price="₦20,000"
 data-image="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=1000&q=90"
-data-description="A playful Flork-inspired cake concept listed publicly by Fastest Cakes."
->
+data-description="A playful celebration cake concept.">
 
 <div class="product-image">
 
 <img
 src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=1000&q=90"
 alt="Flork Love Cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="product-tag">
 Popular
@@ -1693,30 +1592,24 @@ Order
 </button>
 
 </div>
-
 </div>
-
 </div>
-
 
 <!-- PRODUCT 3 -->
 
-<div
-class="product reveal"
+<div class="product reveal"
 data-category="buttercream"
 data-name="Crescent Double-Layered Cake"
 data-price="₦32,000"
 data-image="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1000&q=90"
-data-description="A two-layer cake concept based on the publicly listed Crescent Double-Layered Cake."
->
+data-description="A premium double-layer celebration cake.">
 
 <div class="product-image">
 
 <img
 src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1000&q=90"
-alt="Crescent Double-Layered Cake"
-loading="lazy"
->
+alt="Crescent Cake"
+loading="lazy">
 
 <div class="product-tag">
 Featured
@@ -1749,30 +1642,24 @@ Order
 </button>
 
 </div>
-
 </div>
-
 </div>
-
 
 <!-- PRODUCT 4 -->
 
-<div
-class="product reveal"
+<div class="product reveal"
 data-category="buttercream"
 data-name="Gold Flare Cake"
 data-price="₦45,000"
 data-image="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1000&q=90"
-data-description="A premium gold-themed cake concept inspired by the Gold Flare Cake listed publicly by Fastest Cakes."
->
+data-description="A premium gold-themed cake concept.">
 
 <div class="product-image">
 
 <img
 src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1000&q=90"
 alt="Gold Flare Cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="product-tag">
 Premium
@@ -1805,30 +1692,24 @@ Order
 </button>
 
 </div>
-
 </div>
-
 </div>
-
 
 <!-- PRODUCT 5 -->
 
-<div
-class="product reveal"
+<div class="product reveal"
 data-category="buttercream"
 data-name="Vintage Triple-Layer Cake"
 data-price="₦60,000"
 data-image="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=1000&q=90"
-data-description="A three-layer vintage-style cake concept based on Fastest Cakes' public listing."
->
+data-description="A three-layer vintage-style cake concept.">
 
 <div class="product-image">
 
 <img
 src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=1000&q=90"
 alt="Vintage Triple-Layer Cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="product-tag">
 Hot
@@ -1861,30 +1742,24 @@ Order
 </button>
 
 </div>
-
 </div>
-
 </div>
-
 
 <!-- PRODUCT 6 -->
 
-<div
-class="product reveal"
+<div class="product reveal"
 data-category="children"
 data-name="Children Character Cake"
 data-price="₦40,000"
 data-image="https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=1000&q=90"
-data-description="A double-layer children's cake concept based on Fastest Cakes' publicly listed character cake."
->
+data-description="A fun children's celebration cake concept.">
 
 <div class="product-image">
 
 <img
 src="https://images.unsplash.com/photo-1562777717-dc6984f65a63?auto=format&fit=crop&w=1000&q=90"
 alt="Children Character Cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="product-tag">
 Kids
@@ -1917,30 +1792,24 @@ Order
 </button>
 
 </div>
-
 </div>
-
 </div>
-
 
 <!-- PRODUCT 7 -->
 
-<div
-class="product reveal"
+<div class="product reveal"
 data-category="dessert"
 data-name="Whipped Cream Dessert Cake"
 data-price="₦25,000 – ₦50,000"
 data-image="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=1000&q=90"
-data-description="A whipped cream dessert cake with selectable size and customization options in the original product concept."
->
+data-description="A whipped cream dessert cake concept.">
 
 <div class="product-image">
 
 <img
 src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=1000&q=90"
 alt="Whipped Cream Dessert Cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="product-tag">
 Dessert
@@ -1973,30 +1842,24 @@ Order
 </button>
 
 </div>
-
 </div>
-
 </div>
-
 
 <!-- PRODUCT 8 -->
 
-<div
-class="product reveal"
+<div class="product reveal"
 data-category="dessert"
 data-name="Surprise Cake"
 data-price="₦70,000"
 data-image="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=90"
-data-description="A large celebration cake concept inspired by the publicly listed Surprise Cake."
->
+data-description="A large celebration cake concept.">
 
 <div class="product-image">
 
 <img
 src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=90"
 alt="Surprise Cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="product-tag">
 Statement
@@ -2029,26 +1892,21 @@ Order
 </button>
 
 </div>
-
 </div>
-
 </div>
-
 
 </div>
 
 <div class="shop-all">
 
-<a href="#order" class="btn btn-gold">
+<a href="#locations" class="btn btn-gold">
 Start An Order
 </a>
 
 </div>
 
 </div>
-
 </section>
-
 
 <!-- =====================================================
      WHY US
@@ -2063,11 +1921,9 @@ Start An Order
 <img
 src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&w=1200&q=90"
 alt="Beautiful celebration cake"
-loading="lazy"
->
+loading="lazy">
 
 </div>
-
 
 <div class="reveal">
 
@@ -2080,13 +1936,12 @@ Great Cakes Are Only The Beginning.
 </h2>
 
 <p class="section-text">
-Fastest Cakes was built around a simple idea: excellent and affordable
-cakes should reach your celebration quickly and in good condition.
+Fastest Cakes was built around a simple idea:
+excellent and affordable cakes should reach your celebration
+quickly and in good condition.
 </p>
 
-
 <div class="feature-points">
-
 
 <div class="feature-point">
 
@@ -2101,13 +1956,12 @@ Fast Delivery
 </h3>
 
 <p>
-A streamlined delivery-focused experience for celebrations that can't wait.
+A streamlined delivery-focused experience for celebrations
+that can't wait.
 </p>
 
 </div>
-
 </div>
-
 
 <div class="feature-point">
 
@@ -2122,13 +1976,12 @@ Free Sparklers
 </h3>
 
 <p>
-Every cake comes with free sparklers to make the celebration even more memorable.
+Every cake comes with free sparklers to make the celebration
+even more memorable.
 </p>
 
 </div>
-
 </div>
-
 
 <div class="feature-point">
 
@@ -2143,22 +1996,18 @@ Made For Celebrations
 </h3>
 
 <p>
-From birthdays to weddings and children's parties, there is a cake for the moment.
+From birthdays to weddings and children's parties,
+there is a cake for the moment.
 </p>
 
 </div>
-
-</div>
-
-
 </div>
 
 </div>
-
 </div>
 
+</div>
 </section>
-
 
 <!-- =====================================================
      OCCASIONS
@@ -2179,96 +2028,57 @@ One Cake. One Special Moment.
 </h2>
 
 <p class="section-text">
-Whatever you're celebrating, start with the occasion and find the right creation.
+Whatever you're celebrating, start with the occasion
+and find the right creation.
 </p>
 
 </div>
 
-
 <div class="occasion-grid">
 
-
 <div class="occasion reveal">
-
 <img
 src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=90"
 alt="Birthday celebration"
-loading="lazy"
->
-
-<h3>
-Birthday
-</h3>
-
+loading="lazy">
+<h3>Birthday</h3>
 </div>
 
-
 <div class="occasion reveal">
-
 <img
 src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=90"
 alt="Wedding celebration"
-loading="lazy"
->
-
-<h3>
-Wedding
-</h3>
-
+loading="lazy">
+<h3>Wedding</h3>
 </div>
 
-
 <div class="occasion reveal">
-
 <img
 src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=90"
 alt="Anniversary"
-loading="lazy"
->
-
-<h3>
-Anniversary
-</h3>
-
+loading="lazy">
+<h3>Anniversary</h3>
 </div>
 
-
 <div class="occasion reveal">
-
 <img
 src="https://images.unsplash.com/photo-1504439904031-93ded9f93e4e?auto=format&fit=crop&w=800&q=90"
 alt="Graduation"
-loading="lazy"
->
-
-<h3>
-Graduation
-</h3>
-
+loading="lazy">
+<h3>Graduation</h3>
 </div>
 
-
 <div class="occasion reveal">
-
 <img
 src="https://images.unsplash.com/photo-1513884923967-4b182ef167ab?auto=format&fit=crop&w=800&q=90"
 alt="Children celebration"
-loading="lazy"
->
-
-<h3>
-Kids
-</h3>
-
-</div>
-
-
+loading="lazy">
+<h3>Kids</h3>
 </div>
 
 </div>
-
+</div>
 </section>
-
 
 <!-- =====================================================
      DELIVERY
@@ -2289,16 +2099,18 @@ Your Celebration Shouldn't Have To Wait.
 </h2>
 
 <p class="section-text">
-Fastest Cakes puts speed at the heart of the experience, with a delivery-focused
-approach designed for customers who need their cakes quickly.
+Fastest Cakes puts speed at the heart of the experience,
+with a delivery-focused approach designed for customers
+who need their cakes quickly.
 </p>
 
-<a href="#shop" class="btn btn-gold" style="margin-top:30px;">
+<a href="#shop"
+class="btn btn-gold"
+style="margin-top:30px;">
 Order Your Cake
 </a>
 
 </div>
-
 
 <div class="delivery-card reveal">
 
@@ -2333,13 +2145,10 @@ Enjoy free sparklers
 </div>
 
 </div>
-
 </div>
 
 </div>
-
 </section>
-
 
 <!-- =====================================================
      GALLERY
@@ -2361,7 +2170,6 @@ Made To Be Remembered.
 
 </div>
 
-
 <div class="gallery-grid">
 
 <div class="gallery-item reveal">
@@ -2369,8 +2177,7 @@ Made To Be Remembered.
 <img
 src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=90"
 alt="Luxury cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="gallery-caption">
 Signature Cakes
@@ -2378,14 +2185,12 @@ Signature Cakes
 
 </div>
 
-
 <div class="gallery-item reveal">
 
 <img
 src="https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=1000&q=90"
 alt="Celebration cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="gallery-caption">
 Celebrations
@@ -2393,14 +2198,12 @@ Celebrations
 
 </div>
 
-
 <div class="gallery-item reveal">
 
 <img
 src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=90"
 alt="Dessert"
-loading="lazy"
->
+loading="lazy">
 
 <div class="gallery-caption">
 Sweet Moments
@@ -2408,14 +2211,12 @@ Sweet Moments
 
 </div>
 
-
 <div class="gallery-item reveal">
 
 <img
 src="https://images.unsplash.com/photo-1519869325930-281384150729?auto=format&fit=crop&w=1000&q=90"
 alt="Premium cake"
-loading="lazy"
->
+loading="lazy">
 
 <div class="gallery-caption">
 Premium Designs
@@ -2423,14 +2224,12 @@ Premium Designs
 
 </div>
 
-
 <div class="gallery-item reveal">
 
 <img
 src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=1000&q=90"
 alt="Cupcakes"
-loading="lazy"
->
+loading="lazy">
 
 <div class="gallery-caption">
 Little Treats
@@ -2438,13 +2237,9 @@ Little Treats
 
 </div>
 
-
 </div>
-
 </div>
-
 </section>
-
 
 <!-- =====================================================
      REVIEWS
@@ -2466,9 +2261,7 @@ Celebrations That Speak For Themselves.
 
 </div>
 
-
 <div class="review-grid">
-
 
 <div class="review reveal">
 
@@ -2477,7 +2270,8 @@ Celebrations That Speak For Themselves.
 </div>
 
 <p>
-“Got my order delivered the same day I requested. The service was excellent.”
+“Got my order delivered the same day I requested.
+The service was excellent.”
 </p>
 
 <div class="reviewer">
@@ -2486,7 +2280,6 @@ Celebrations That Speak For Themselves.
 
 </div>
 
-
 <div class="review reveal">
 
 <div class="stars">
@@ -2494,7 +2287,8 @@ Celebrations That Speak For Themselves.
 </div>
 
 <p>
-“The cake tasted really nice, the décor was beautiful and the delivery was fast and seamless.”
+“The cake tasted really nice, the décor was beautiful
+and the delivery was fast and seamless.”
 </p>
 
 <div class="reviewer">
@@ -2503,13 +2297,9 @@ Celebrations That Speak For Themselves.
 
 </div>
 
-
 </div>
-
 </div>
-
 </section>
-
 
 <!-- =====================================================
      LOCATIONS
@@ -2530,69 +2320,57 @@ Closer To Your Celebration.
 </h2>
 
 <p class="section-text">
-Fastest Cakes has centres across Lagos, Abuja, Port Harcourt and Ibadan.
+Fastest Cakes has centres across Lagos, Abuja,
+Port Harcourt and Ibadan.
 </p>
 
 </div>
 
-
 <div class="location-grid">
-
 
 <div class="location reveal">
 <h3>Lekki</h3>
 <p>6A Fola Osibo Road, Lekki Phase 1</p>
 </div>
 
-
 <div class="location reveal">
 <h3>Ikoyi</h3>
 <p>39 Onikoyi Road, Ikoyi</p>
 </div>
-
 
 <div class="location reveal">
 <h3>Ikeja</h3>
 <p>Ikeja Town Square, 131 Obafemi Awolowo Way</p>
 </div>
 
-
 <div class="location reveal">
 <h3>Gwarinpa</h3>
 <p>Suite A4, Bricks N’ More Plaza, 6th Avenue, Abuja</p>
 </div>
-
 
 <div class="location reveal">
 <h3>Gaduwa</h3>
 <p>Plot 678, off Oladipo Diya Street, Gaduwa, Abuja</p>
 </div>
 
-
 <div class="location reveal">
 <h3>Port Harcourt</h3>
 <p>61 Woji Road, New GRA</p>
 </div>
-
 
 <div class="location reveal">
 <h3>Ibadan</h3>
 <p>Jericho Mall, 20 Kudeti Avenue, Jericho</p>
 </div>
 
-
 <div class="location reveal">
 <h3>And More</h3>
 <p>Ajah, Yaba, Opebi, Surulere, Ikorodu, Egbeda and Abijo.</p>
 </div>
 
-
 </div>
-
 </div>
-
 </section>
-
 
 <!-- =====================================================
      CTA
@@ -2611,8 +2389,8 @@ Make The Moment Sweeter.
 </h2>
 
 <p>
-Choose your cake, tell us about your celebration and let Fastest Cakes handle
-the sweet part.
+Choose your cake, tell us about your celebration
+and let Fastest Cakes handle the sweet part.
 </p>
 
 <a href="#shop" class="btn btn-gold">
@@ -2620,9 +2398,7 @@ Choose A Cake
 </a>
 
 </div>
-
 </section>
-
 
 <!-- =====================================================
      FOOTER
@@ -2634,7 +2410,6 @@ Choose A Cake
 
 <div class="footer-grid">
 
-
 <div>
 
 <div class="footer-logo">
@@ -2642,12 +2417,11 @@ Fastest Cakes
 </div>
 
 <p class="footer-description">
-Beautiful cakes, affordable choices and fast delivery for celebrations
-across Nigeria.
+Beautiful cakes, affordable choices and fast delivery
+for celebrations across Nigeria.
 </p>
 
 </div>
-
 
 <div>
 
@@ -2674,9 +2448,7 @@ Locations
 </a>
 
 </div>
-
 </div>
-
 
 <div>
 
@@ -2694,23 +2466,21 @@ Contact
 cs@fastestcakes.com
 </a>
 
-<a href="https://wa.me/2349160007620?text=Hello%20Fastest%20Cakes%2C%20I%27d%20like%20to%20order%20a%20cake."
-target="_blank">
+<a
+href="https://wa.me/2349160007620?text=Hello%20Fastest%20Cakes%2C%20I'd%20like%20to%20order%20a%20cake."
+target="_blank"
+rel="noopener">
 WhatsApp
 </a>
 
 </div>
-
 </div>
 
-
 </div>
-
 
 <div class="footer-bottom">
 
 © 2026 Fastest Cakes Website Concept.
-
 <br>
 
 <span class="credit">
@@ -2724,30 +2494,24 @@ Concept/demo for presentation purposes.
 </div>
 
 </div>
-
 </footer>
 
-
 <!-- =====================================================
-     WHATSAPP
+     FLOATING WHATSAPP
 ===================================================== -->
 
 <a
-href="https://wa.me/2349160007620?text=Hello%20Fastest%20Cakes%2C%20I%27d%20like%20to%20place%20an%20order."
+href="https://wa.me/2349160007620?text=Hello%20Fastest%20Cakes%2C%20I'd%20like%20to%20place%20an%20order."
 class="whatsapp"
 target="_blank"
 rel="noopener"
-aria-label="Order on WhatsApp"
->
+aria-label="Order on WhatsApp">
 
 <svg viewBox="0 0 24 24">
-
-<path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5 0 .17 5.32.17 11.88c0 2.09.55 4.13 1.59 5.93L.08 24l6.33-1.66a11.87 11.87 0 0 0 5.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.88 0-3.17-1.23-6.15-3.41-8.42ZM12.06 21.8h-.01a9.86 9.86 0 0 1-5.02-1.38l-.36-.21-3.76.99 1-3.66-.23-.38a9.87 9.87 0 1 1 8.38 4.64Zm5.42-7.39c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
-
+<path d="M20.52 3.48A11.86 11.86 0 0 0 12.05 0C5.5.0.17 5.32.17 11.88c0 2.09.55 4.13 1.59 5.93L.08 24l6.33-1.66a11.87 11.87 0 0 0 5.64 1.44h.01c6.55 0 11.87-5.32 11.87-11.88 0-3.17-1.23-6.15-3.41-8.42ZM12.06 21.8h-.01a9.86 9.86 0 0 1-5.02-1.38l-.36-.21-3.76.99 1-3.66-.23-.38a9.87 9.87 0 1 1 8.38 4.64Zm5.42-7.39c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.35.2 1.86.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
 </svg>
 
 </a>
-
 
 <!-- =====================================================
      PRODUCT MODAL
@@ -2763,11 +2527,7 @@ aria-label="Order on WhatsApp"
 
 <div class="modal-image">
 
-<img
-id="modalImage"
-src=""
-alt=""
->
+<img id="modalImage" src="" alt="">
 
 </div>
 
@@ -2808,30 +2568,30 @@ Cake Message
 <input
 id="cakeMessage"
 type="text"
-placeholder="e.g. Happy Birthday Sarah"
->
+placeholder="e.g. Happy Birthday Sarah">
 
 <a
 id="modalWhatsApp"
 class="btn btn-gold"
 target="_blank"
-style="width:100%;margin-top:25px;"
->
+rel="noopener"
+style="width:100%;margin-top:25px;">
+
 Order On WhatsApp
+
 </a>
 
 </div>
-
+</div>
 </div>
 
-</div>
-
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 
 <script>
 
-/* =====================================================
-   LOADER
-===================================================== */
+/* LOADER */
 
 window.addEventListener("load", () => {
 
@@ -2845,38 +2605,24 @@ window.addEventListener("load", () => {
 
 });
 
+/* HEADER */
 
-/* =====================================================
-   HEADER
-===================================================== */
-
-const header =
-document.getElementById("header");
+const header = document.getElementById("header");
 
 window.addEventListener("scroll", () => {
 
     if(window.scrollY > 40){
-
         header.classList.add("scrolled");
-
     }else{
-
         header.classList.remove("scrolled");
-
     }
 
 });
 
+/* MOBILE MENU */
 
-/* =====================================================
-   MOBILE MENU
-===================================================== */
-
-const menu =
-document.getElementById("menu");
-
-const nav =
-document.getElementById("navLinks");
+const menu = document.getElementById("menu");
+const nav = document.getElementById("navLinks");
 
 menu.addEventListener("click", () => {
 
@@ -2896,13 +2642,9 @@ document
 
 });
 
+/* SCROLL REVEAL */
 
-/* =====================================================
-   SCROLL REVEAL
-===================================================== */
-
-const reveal =
-document.querySelectorAll(".reveal");
+const reveal = document.querySelectorAll(".reveal");
 
 function revealOnScroll(){
 
@@ -2922,13 +2664,9 @@ function revealOnScroll(){
 }
 
 window.addEventListener("scroll", revealOnScroll);
-
 revealOnScroll();
 
-
-/* =====================================================
-   FILTERS
-===================================================== */
+/* FILTERS */
 
 const filters =
 document.querySelectorAll(".filter");
@@ -2975,10 +2713,7 @@ filters.forEach(filter => {
 
 });
 
-
-/* =====================================================
-   PRODUCT MODAL
-===================================================== */
+/* PRODUCT MODAL */
 
 const modal =
 document.getElementById("modal");
@@ -3001,12 +2736,14 @@ document.getElementById("modalDescription");
 const modalWhatsApp =
 document.getElementById("modalWhatsApp");
 
+const modalCategory =
+document.getElementById("modalCategory");
+
 const flavour =
 document.getElementById("flavour");
 
 const cakeMessage =
 document.getElementById("cakeMessage");
-
 
 function openProduct(product){
 
@@ -3028,15 +2765,10 @@ function openProduct(product){
     .textContent;
 
     modalImage.src = image;
-
     modalImage.alt = name;
-
     modalName.textContent = name;
-
     modalPrice.textContent = price;
-
     modalDescription.textContent = description;
-
     modalCategory.textContent = category;
 
     updateWhatsApp();
@@ -3044,7 +2776,6 @@ function openProduct(product){
     modal.classList.add("show");
 
 }
-
 
 document
 .querySelectorAll(".quick-view, .order-small")
@@ -3063,6 +2794,7 @@ document
 
 });
 
+/* WHATSAPP ORDER */
 
 function updateWhatsApp(){
 
@@ -3076,7 +2808,8 @@ function updateWhatsApp(){
     flavour.value;
 
     const message =
-    cakeMessage.value || "No message added";
+    cakeMessage.value ||
+    "No message added";
 
     const text =
     `Hello Fastest Cakes, I'd like to order the ${name} (${price}). Flavour: ${selectedFlavour}. Cake message: ${message}.`;
@@ -3086,7 +2819,6 @@ function updateWhatsApp(){
     encodeURIComponent(text);
 
 }
-
 
 flavour.addEventListener(
 "change",
@@ -3098,13 +2830,13 @@ cakeMessage.addEventListener(
 updateWhatsApp
 );
 
+/* CLOSE MODAL */
 
 modalClose.addEventListener("click", () => {
 
     modal.classList.remove("show");
 
 });
-
 
 modal.addEventListener("click", event => {
 
@@ -3116,11 +2848,6 @@ modal.addEventListener("click", event => {
 
 });
 
-
-/* =====================================================
-   ESCAPE KEY
-===================================================== */
-
 document.addEventListener("keydown", event => {
 
     if(event.key === "Escape"){
@@ -3130,6 +2857,36 @@ document.addEventListener("keydown", event => {
     }
 
 });
+
+/* =====================================================
+   PWA / APP SUPPORT
+===================================================== */
+
+if("serviceWorker" in navigator){
+
+    window.addEventListener("load", () => {
+
+        navigator.serviceWorker
+        .register("./service-worker.js")
+        .then(() => {
+
+            console.log(
+                "Fastest Cakes PWA ready"
+            );
+
+        })
+        .catch(error => {
+
+            console.log(
+                "Fastest Cakes PWA error:",
+                error
+            );
+
+        });
+
+    });
+
+}
 
 </script>
 
